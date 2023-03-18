@@ -1,0 +1,35 @@
+(base) xilm@xilm-MS-7D17:~/fuxian/kitti_object_vis-master$ conda activate kitti_vis
+(kitti_vis) xilm@xilm-MS-7D17:~/fuxian/kitti_object_vis-master$ python kitti_object.py --show_lidar_with_depth --img_fov --const_box --vis
+********************************************************************************
+WARNING: Imported VTK version (9.1) does not match the one used
+         to build the TVTK classes (9.2). This may cause problems.
+         Please rebuild TVTK.
+********************************************************************************
+
+data/object training
+no pred file
+data/object/training/velodyne/000000.bin
+0 image shape:  (370, 1224, 3)
+0 velo  shape:  (115384, 4)
+======== Objects in Ground Truth ========
+=== 1 object ===
+Type, truncation, occlusion, alpha: Pedestrian, 0, 0, -0.200000
+2d bbox (x0,y0,x1,y1): 712.400000, 143.000000, 810.730000, 307.920000
+3d bbox h,w,l: 1.890000, 0.480000, 1.200000
+3d bbox location, ry: (1.840000, 1.470000, 8.410000), 0.010000
+Difficulty of estimation: Easy
+('All point num: ', 115384)
+('FOV point num: ', (20285, 4))
+pc_velo (20285, 4)
+==================== (20285, 4)
+box3d_pts_3d_velo:
+[[ 8.96440459 -2.45859462 -1.60867186]
+ [ 8.48444353 -2.45306157 -1.60607081]
+ [ 8.49835837 -1.25324031 -1.59072653]
+ [ 8.97831943 -1.25877336 -1.59332758]
+ [ 8.97436611 -2.48287864  0.28114573]
+ [ 8.49440505 -2.47734559  0.28374677]
+ [ 8.50831989 -1.27752433  0.29909105]
+ [ 8.98828095 -1.28305738  0.29649   ]]
+2023-03-18 17:01:47.158 (   1.032s) [        4A119740]vtkOpenGLRenderWindow.c:493    ERR| vtkEGLRenderWindow (0x384e580): GLEW could not be initialized: Missing GL version
+Segmentation fault (core dumped)
